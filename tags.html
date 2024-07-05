@@ -1,0 +1,115 @@
+<!DOCTYPE html> 
+<!-- Defines the document type and version (HTML5) -->
+
+<html lang="en"> 
+<!-- The root element of an HTML page, with language set to English -->
+
+<head>
+    <meta charset="UTF-8"> 
+<!-- Sets the character encoding for the document (UTF-8) -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<!-- Responsive design: ensures proper rendering on different devices -->
+
+    <title>My Web Page</title>
+ <!-- Title of the document, appears in the browser tab -->
+
+    <link rel="stylesheet" href="styles.css"> 
+<!-- Links to an external CSS file for styling -->
+
+    <style>
+        /* Internal CSS for quick styles */
+        body { font-family: Arial, sans-serif; }
+    </style>
+    <script src="script.js" defer></script> 
+<!-- Links to an external JavaScript file; 'defer' delays execution until the page is loaded -->
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to My Web Page</h1> 
+<!-- Main heading of the page -->
+
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li> 
+<!-- Navigation link to the Home section -->
+                <li><a href="#about">About</a></li>
+ <!-- Navigation link to the About section -->
+                <li><a href="#contact">Contact</a></li>
+ <!-- Navigation link to the Contact section -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section id="home">
+ 
+<!-- Section for the Home content -->
+
+            <h2>Home</h2> 
+<!-- Subheading for the Home section -->
+
+            <p>Welcome to the home page. Here is some introductory text.</p>
+ <!-- Paragraph of text -->
+
+            <img src="image.jpg" alt="Descriptive text"> 
+<!-- Image with alternative text -->
+
+        </section>
+        <section id="about"> 
+<!-- Section for the About content -->
+
+            <h2>About</h2>
+            <p>About us text goes here.</p>
+
+            <figure>
+                <img src="about-image.jpg" alt="About us image"> 
+<!-- Image with a caption -->
+
+                <figcaption>Our team at work.</figcaption> 
+<!-- Caption for the image -->
+            </figure>
+        </section>
+
+        <section id="contact"> 
+<!-- Section for the Contact content -->
+
+            <h2>Contact</h2>
+            <form action="submit-form.php" method="post">
+ <!-- Form for user input, submits data to a server-side script -->
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+ <!-- Text input for name, required field -->
+
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required> 
+<!-- Email input, required field -->
+
+                <br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea> 
+<!-- Multi-line text input, required field -->
+
+                <br>
+                <button type="submit">Send</button> 
+<!-- Submit button -->
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 My Web Page. All rights reserved.</p> 
+<!-- Footer text -->
+
+        <a href="privacy.html">Privacy Policy</a>
+ <!-- Link to the privacy policy -->
+
+    </footer>
+</body>
+</html>
